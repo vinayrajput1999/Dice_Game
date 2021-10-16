@@ -10,7 +10,7 @@
 .container {
   max-width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #ff4b2b, #ff416c);
+  background: linear-gradient(to bottom, #2be6ff, #000000);
 }
 
 .dice-game {
@@ -25,8 +25,8 @@
 .board-container {
   width: 50%;
   height: 81vh;
-  background: #ffffff;
-  border-radius: 5px;
+  background: linear-gradient(to right, rgb(126, 227, 235),  white);
+  border-radius: 35px;
   position: relative;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -65,6 +65,7 @@
   width: 100%;
   outline: none;
   border: none;
+  border-radius: 30px 0px 30px 0px;
   padding: 0 30px;
   font-size: 16px;
   font-weight: 500;
@@ -77,30 +78,32 @@
 
 .input-group i {
   position: absolute;
-  color: #ff4b2b;
-  font-size: 17px;
+  margin-left: 10px;
+  color: black;
+  font-size: 15px;
 }
 
 .button {
   margin-top: 40px;
+  
 }
 
 .button input {
-  color: #ffffff;
-  background: #ff4b2b;
+  color: #000000;
+  background: linear-gradient(to left, #8ce4f0 , white ) ;
   border-radius: 5px;
   padding: 0;
   cursor: pointer;
   transition: all 0.4s ease;
+  
 }
 
 .button input:hover {
-  background: linear-gradient(to bottom, #eb3349, #f45c43);
   border-radius: 50px;
 }
 
 .board-container {
-    display: none
+    display: none;
 }
 
 .board {
@@ -113,15 +116,20 @@
 .player2 {
   width: 50%;
   height: 100%;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-
 .player1 {
-  background: #ffffff;
+  background: linear-gradient(to top, rgb(255, 255, 255), rgb(15, 235, 243));
+  border-radius: 35px 0px 0px 0px;
+
+}
+.player2 {
+  background: linear-gradient(to top, rgb(15, 235, 243), rgb(255, 255, 255));
+  border-radius: 0px 35px 0px 0px;
+}
 }
 
 .heading {
@@ -135,7 +143,7 @@
 }
 
 .score {
-  color: #ff0000;
+  color: #000000;
   font-size: 10vh;
 }
 
@@ -150,7 +158,7 @@
 .dice img {
   max-width: 100%;
   max-height: 100%;
-  border-radius: 5px;
+  border-radius: 0px;
   box-shadow: rgba(100, 100, 111, 0.9) 0px 7px 29px 0px;
 }
 
@@ -161,8 +169,8 @@
 
 #player-1-button input[disabled],
 #player-2-button input[disabled] {
-  background: #d6c4c4;
-  color: #000000;
+  background: #000000;
+  color: #ffffff;
   cursor: not-allowed;
   outline: none;
   border-radius: 50px;
@@ -176,6 +184,7 @@
     opacity: 0.6;
     background: url("../images/winner.gif");
     z-index: 50;
+    margin: 0px 50px 20px 0px;
 }
 
 .restart-btn{
@@ -184,14 +193,14 @@
   width: 30%;
   border: none;
   font-size: 15px;
-  color: black;
-  background: #d3c0c0;
+  color: rgb(255, 255, 255);
+  background: #000000;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 
 .restart-btn:hover {
-  background: linear-gradient(to top, #640712, #f45c43);
+  background: linear-gradient(to top, #000000, #81f7f7);
   color: #ffffff;
 }

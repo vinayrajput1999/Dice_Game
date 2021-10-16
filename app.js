@@ -82,12 +82,12 @@ function checkIfWinnerExists() {
   }
 }
 
-function reset(event) {
+function restart(event) {
   event.preventDefault();
   window.location.reload();
 }
 
-function restart(event) {
+function reset(event) {
   event.preventDefault();
   console.log("restart");
   document.querySelectorAll(".dice img")[0].src = "../images/dice1.png";
